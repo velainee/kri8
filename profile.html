@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Rambla:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"/>
+        <link rel="icon" type="image/jpg" href="images/logo.png" />
+        <title>KRI8 - Profile</title>
+    </head>
+    <body>
+        <nav>
+            <ul class="nav-bar-logo">
+                <li><a class="nav-link" href="index.html" id="logo"><img src="images/logo.png"></a></li>
+            </ul>
+            <ul class="nav-bar">
+                <li id="tutorials">
+                    <a class="nav-link" href="tutorial.html">TUTORIALS</a>
+                    <div class="hover-dropdown tutorials-dd">
+                        <div class="invis-box"></div>
+                        <div class="invis-box">
+                            <div class="triangle"></div>
+                        </div>
+                        <div class="visible-box">
+                            <a href="#">WOOD</a>
+                            <div class="line"></div>
+                            <a href="#">LEATHER</a>
+                            <div class="line"></div>
+                            <a href="#">JEWELRY</a>
+                            <div class="line"></div>
+                            <a href="#">POTTERY</a>
+                            <div class="line"></div>
+                            <a href="#">METAL</a>
+                        </div>
+                    </div>
+                </li>
+                <li id="coworking">
+                    <a class="nav-link" id="coworkingbtn">CO-WORKING SPACE</a>
+                    <div class="hover-dropdown coworking-dd">
+                        <div class="invis-box"></div>
+                        <div class="invis-box">
+                            <div class="triangle"></div>
+                        </div>
+                        <div class="visible-box">
+                            <a href="#">BALI</a>
+                            <div class="line"></div>
+                            <a href="#">BALIKPAPAN</a>
+                            <div class="line"></div>
+                            <a href="#">DKI JAKARTA</a>
+                            <div class="line"></div>
+                            <a href="#">MEDAN</a>
+                            <div class="line"></div>
+                            <a href="#">SURABAYA</a>
+                            <div class="line"></div>
+                            <a href="#">YOGYAKARTA</a>
+                        </div>
+
+                        <div id="myModal" class="modal">
+
+                        <div class="modal-content">
+                            <a class="close" href='#'>x</a>
+                                <p class="content">Turn on location to see nearest Co-Working space?</p>
+                                <div class="form-button-row">
+                                  <button type="button" onclick="window.location.href='conear.html';" id="yes">YES</button>
+                                  <button type="button" onclick="window.location.href='coworking.html';" id="no">NO</button>
+                                </div>
+                            </div> 
+                        </div>
+
+                        <script>
+                            // Get the modal
+                            var modal = document.getElementById("myModal");
+
+                            // Get the button that opens the modal
+                            var btn = document.getElementById("coworkingbtn");
+
+                            // Get the <span> element that closes the modal
+                            var span = document.getElementsByClassName("close")[0];
+
+                            // When the user clicks the button, open the modal 
+                            btn.onclick = function() {
+                              modal.style.display = "block";
+                            }
+
+                            // When the user clicks on <span> (x), close the modal
+                            span.onclick = function() {
+                              modal.style.display = "none";
+                            }
+
+                            // When the user clicks anywhere outside of the modal, close it
+                            window.onclick = function(event) {
+                              if (event.target == modal) {
+                                modal.style.display = "none";
+                              }
+                            }
+                        </script>
+                    </div>
+                </li>
+                <li id="rentbuy">
+                    <a class="nav-link" href="rentbuy.html">RENT/BUY</a>
+                    <div class="hover-dropdown rentbuy-dd">
+                        <div class="invis-box"></div>
+                        <div class="invis-box">
+                            <div class="triangle"></div>
+                        </div>
+                        <div class="visible-box">
+                            <a href="#">WOOD</a>
+                            <div class="line"></div>
+                            <a href="#">LEATHER</a>
+                            <div class="line"></div>
+                            <a href="#">JEWELRY</a>
+                            <div class="line"></div>
+                            <a href="#">POTTERY</a>
+                            <div class="line"></div>
+                            <a href="#">METAL</a>
+                        </div>
+                    </div>
+                </li>
+                <li id="handmade">
+                    <a class="nav-link" href="handmade.html">HANDMADE</a>
+                    <div class="hover-dropdown handmade-dd">
+                        <div class="invis-box"></div>
+                        <div class="invis-box">
+                            <div class="triangle"></div>
+                        </div>
+                        <div class="visible-box">
+                            <a href="#">WOOD</a>
+                            <div class="line"></div>
+                            <a href="#">LEATHER</a>
+                            <div class="line"></div>
+                            <a href="#">JEWELRY</a>
+                            <div class="line"></div>
+                            <a href="#">POTTERY</a>
+                            <div class="line"></div>
+                            <a href="#">METAL</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="shopping-cart">
+                    <a class="nav-link" href="#"><img class="shopping-cart" src="images/cart-grey.png"></a>
+                </li>
+                <li id="user-logo" class="user-logo">
+                    <a class="nav-link"><img class="user-logo" src="images/user.png"></a>
+                    <div class="hover-dropdown user-dd">
+                        <div class="invis-box">
+                            <div class="triangle"></div>
+                        </div>
+                        <div class="visible-box">
+                            <a href="profile.html">EDIT PROFILE</a>
+                            <div class="line"></div>
+                            <a href="#">LOGOUT</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="profile-main-container">
+            <div class="profile-left-container">
+                    <div class="user-profile-title">
+                        <p>Users Profile</p>
+                    </div>
+                    <div class="user-profile-photo"></div>
+                <div class="profile-links">
+                    <div class="profile-single-link">
+                        <a href="#">Sign up for membership</a>
+                    </div>
+                    <div class="profile-single-link">
+                        <a href="#">Change password</a>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-right-container">
+                <div class="account-form">
+                    <div class="form-row-list">
+                        <div class="form-double-row">
+                            <p class="form-double-row-title">FIRST NAME</p>
+                            <p class="form-double-row-title">LAST NAME</p>
+
+                        </div>
+                        <div class="form-double-row">
+                            <input type="text" class="form-single-input"></input>
+                            <input type="text" class="form-single-input2"></input>
+                        </div>
+                    </div>
+                    <div class="form-row-list">
+                        <div class="form-single-row">
+                            <p class="form-single-row-title">USERNAME</p>
+                            <input type="text" class="form-single-input"></input>
+                        </div>
+                    </div>
+                    <div class="form-row-list">
+                        <div class="form-single-row">
+                            <p class="form-single-row-title">EMAIL</p>
+                            <input type="text" class="form-single-input"></input>
+                        </div>
+                    </div>
+                    <div class="form-row-list">
+                        <div class="form-single-row">
+                            <p class="form-single-row-title">PASSWORD</p>
+                            <input type="text" class="form-single-input"></input>
+                        </div>
+                    </div>
+                    <div class="form-row-list">
+                        <div class="form-single-row">
+                            <p class="form-single-row-title">GENDER</p>
+                            <input type="text" class="form-single-input"></input>
+                        </div>
+                    </div>
+                    <div class="form-row-list">
+                        <div class="form-single-row">
+                            <p class="form-single-row-title">DATE OF BIRTH</p>
+                            <input type="text" class="form-single-input"></input>
+                        </div>
+                    </div>
+                    <div class="form-row-list">
+                        <div class="form-single-row">
+                            <p class="form-single-row-title">ADDRESS</p>
+                            <input type="text" class="form-single-input"></input>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-button-row">
+                    <button type="button" onclick="window.location.href='index.html';" id="save-profile">SAVE</button>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <ul class="left-footer">
+                <div class="faq">
+                    <li><a class="nav-link" href="faq.html">FAQ</a></li>
+                </div>
+                <div class="footer-conditions">
+                    <li><a class="nav-link" href="privacy-policy.html">Privacy and Policy</a></li>
+                </div>
+                <div>
+                    <li><a class="nav-link" href="terms-conditions.html">Terms of Service</a></li>
+                </div>
+            </ul>
+            <ul class="right-footer">
+                <li><a class="nav-link" href="#"><img class="contact-logo" src="images/whatsapp.png"></a></li>
+
+                <li><a class="nav-link" href="#"><img class="contact-logo" src="images/instagram.png"></a></li>
+
+                <li><a class="nav-link" href="#"><img class="contact-logo" src="images/email.png"></a></li>
+
+            </ul>
+        </footer>
+    </body>
+</html>

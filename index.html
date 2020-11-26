@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Rambla:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"/>
+        <link rel="icon" type="image/jpg" href="images/logo.png" />
+        <title>KRI8 - Home</title>
+    </head>
+    <body>
+        <nav>
+            <ul class="nav-bar-logo">
+                <li><a class="nav-link" href="index.html" id="logo"><img src="images/logo.png"></a></li>
+            </ul>
+            <ul class="nav-bar">
+                <li id="tutorials">
+                    <a class="nav-link" href="tutorial.html">TUTORIALS</a>
+                    <div class="hover-dropdown tutorials-dd">
+                        <div class="invis-box"></div>
+                        <div class="invis-box">
+                            <div class="triangle"></div>
+                        </div>
+                        <div class="visible-box">
+                            <a href="#">WOOD</a>
+                            <div class="line"></div>
+                            <a href="#">LEATHER</a>
+                            <div class="line"></div>
+                            <a href="#">JEWELRY</a>
+                            <div class="line"></div>
+                            <a href="#">POTTERY</a>
+                            <div class="line"></div>
+                            <a href="#">METAL</a>
+                        </div>
+                    </div>
+                </li>
+                <li id="coworking">
+                    <a class="nav-link" id="coworkingbtn">CO-WORKING SPACE</a>
+                    <div class="hover-dropdown coworking-dd">
+                        <div class="invis-box"></div>
+                        <div class="invis-box">
+                            <div class="triangle"></div>
+                        </div>
+                        <div class="visible-box">
+                            <a href="#">BALI</a>
+                            <div class="line"></div>
+                            <a href="#">BALIKPAPAN</a>
+                            <div class="line"></div>
+                            <a href="#">DKI JAKARTA</a>
+                            <div class="line"></div>
+                            <a href="#">MEDAN</a>
+                            <div class="line"></div>
+                            <a href="#">SURABAYA</a>
+                            <div class="line"></div>
+                            <a href="#">YOGYAKARTA</a>
+                        </div>
+
+                        <div id="myModal" class="modal">
+
+                        <div class="modal-content">
+                            <a class="close" href='#'>x</a>
+                                <p class="content">Turn on location to see nearest Co-Working space?</p>
+                                <div class="form-button-row">
+                                  <button type="button" onclick="window.location.href='conear.html';" id="yes">YES</button>
+                                  <button type="button" onclick="window.location.href='coworking.html';" id="no">NO</button>
+                                </div>
+                            </div> 
+                        </div>
+
+                        <script>
+                            // Get the modal
+                            var modal = document.getElementById("myModal");
+
+                            // Get the button that opens the modal
+                            var btn = document.getElementById("coworkingbtn");
+
+                            // Get the <span> element that closes the modal
+                            var span = document.getElementsByClassName("close")[0];
+
+                            // When the user clicks the button, open the modal 
+                            btn.onclick = function() {
+                              modal.style.display = "block";
+                            }
+
+                            // When the user clicks on <span> (x), close the modal
+                            span.onclick = function() {
+                              modal.style.display = "none";
+                            }
+
+                            // When the user clicks anywhere outside of the modal, close it
+                            window.onclick = function(event) {
+                              if (event.target == modal) {
+                                modal.style.display = "none";
+                              }
+                            }
+                        </script>
+                    </div>
+                </li>
+                <li id="rentbuy">
+                    <a class="nav-link" href="rentbuy.html">RENT/BUY</a>
+                    <div class="hover-dropdown rentbuy-dd">
+                        <div class="invis-box"></div>
+                        <div class="invis-box">
+                            <div class="triangle"></div>
+                        </div>
+                        <div class="visible-box">
+                            <a href="#">WOOD</a>
+                            <div class="line"></div>
+                            <a href="#">LEATHER</a>
+                            <div class="line"></div>
+                            <a href="#">JEWELRY</a>
+                            <div class="line"></div>
+                            <a href="#">POTTERY</a>
+                            <div class="line"></div>
+                            <a href="#">METAL</a>
+                        </div>
+                    </div>
+                </li>
+                <li id="handmade">
+                    <a class="nav-link" href="handmade.html">HANDMADE</a>
+                    <div class="hover-dropdown handmade-dd">
+                        <div class="invis-box"></div>
+                        <div class="invis-box">
+                            <div class="triangle"></div>
+                        </div>
+                        <div class="visible-box">
+                            <a href="#">WOOD</a>
+                            <div class="line"></div>
+                            <a href="#">LEATHER</a>
+                            <div class="line"></div>
+                            <a href="#">JEWELRY</a>
+                            <div class="line"></div>
+                            <a href="#">POTTERY</a>
+                            <div class="line"></div>
+                            <a href="#">METAL</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="shopping-cart">
+                    <a class="nav-link" href="#"><img class="shopping-cart" src="images/cart-grey.png"></a>
+                </li>
+                <li id="user-logo" class="user-logo">
+                    <a class="nav-link"><img class="user-logo" src="images/user-grey.png"></a>
+                    <div class="hover-dropdown user-dd">
+                        <div class="invis-box">
+                            <div class="triangle"></div>
+                        </div>
+                        <div class="visible-box">
+                            <a href="profile.html">EDIT PROFILE</a>
+                            <div class="line"></div>
+                            <a href="#">LOGOUT</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="header">
+            <div class="bottom-right-text">
+                <p>WORKSHOP - APHRODITE</p>
+            </div>
+        </div>
+        <div class="deals">
+            <div class="deal-heading">
+                <div class="heading-title">
+                    <p>TODAY'S PACKAGE DEALS</p>
+                </div>
+                <div class="heading-details">
+                    <p><a href="#">See All</a></p>
+                </div>
+            </div>
+            <div class="deal-product-list">
+                <div class="product">
+                    <img src="images/fashion-road.png">
+                    <p class="product-name">Fashion Road 6pc Clay Sculpting Tools</p>
+                    <div class="invis-box"></div>
+                    <div class="product-details">
+                        <div class="product-price">
+                            <p>Rp. 300,000.-</p>
+                        </div>
+                        <div class="product-rating">
+                            <i class="fas fa-star star-lit"></i>
+                            <i class="fas fa-star star-lit"></i>
+                            <i class="fas fa-star star-lit"></i>
+                            <i class="fas fa-star star-lit"></i>
+                            <i class="fas fa-star star-lit"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/foldable-jewelry.png">
+                    <p class="product-name">Foldable Jewelry Magnifier with Bright LED Light for Gems, Jewel, etc.</p>
+                    <div class="product-details">
+                        <div class="product-price">
+                            <p>Rp. 129,999.-</p>
+                        </div>
+                        <div class="product-rating">
+                            <i class="fas fa-star star-lit"></i>
+                            <i class="fas fa-star star-lit"></i>
+                            <i class="fas fa-star star-lit"></i>
+                            <i class="fas fa-star star-dim"></i>
+                            <i class="fas fa-star star-dim"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/fashion-road.png">
+                    <p class="product-name">Fashion Road 6pc Clay Sculpting Tools</p>
+                    <div class="invis-box"></div>
+                    <div class="product-details">
+                        <div class="product-price">
+                            <p>Rp. 300,000.-</p>
+                        </div>
+                        <div class="product-rating">
+                            <i class="fas fa-star star-lit"></i>
+                            <i class="fas fa-star star-lit"></i>
+                            <i class="fas fa-star star-lit"></i>
+                            <i class="fas fa-star star-lit"></i>
+                            <i class="fas fa-star star-lit"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about">
+            <div class="heading-title">
+                <p>ABOUT US</p>
+            </div>
+            <div class="heading-details">
+                <p class="heading-details-title">KRI8 <span>/krēˈāt/</span></p>
+                <p class="about-us-text">KRI8 is a platform for customers to buy or rent tools, rent co-working space, and learn how to use the tools by our
+                tutorials videos. Not only that, KRI8 also provide amenities for users to sell their handmade products.</p>
+                <p class="about-us-text">As product designer students, we are aware that tools have a huge role in creating a product. Our goal is to provide and
+                help people with limited tools/ designer student to make their imaginations a reality. Nevertheless, a right and
+                comfortable space is also important. Here we have a solution by providing a co-working space accommodated with tools and
+                an instructor that will guide you!</p>
+                <p class="about-us-text">GOOD NEWS!<br>
+                You can use our facilities anywhere in Indonesia. Our workshop and co-working space are spanned across the country,
+                available in Jakarta, Bali, Yogyakarta, Surabaya, Medan, Balikpapan, etc. Shippings are available across the country too!</p>
+            </div>
+        </div>
+        <footer>
+            <ul class="left-footer">
+                <div class="faq">
+                    <li><a class="nav-link" href="faq.html">FAQ</a></li>
+                </div>
+                <div class="footer-conditions">
+                    <li><a class="nav-link" href="privacy-policy.html">Privacy and Policy</a></li>
+                </div>
+                <div>
+                    <li><a class="nav-link" href="terms-conditions.html">Terms of Service</a></li>
+                </div>
+            </ul>
+            <ul class="right-footer">
+                <li><a class="nav-link" href="#"><img class="contact-logo" src="images/whatsapp.png"></a></li>
+
+                <li><a class="nav-link" href="#"><img class="contact-logo" src="images/instagram.png"></a></li>
+
+                <li><a class="nav-link" href="#"><img class="contact-logo" src="images/email.png"></a></li>
+
+            </ul>
+        </footer>
+    </body>
+</html>

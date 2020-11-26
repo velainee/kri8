@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Rambla:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"/>
+        <link rel="icon" type="image/jpg" href="images/logo.png" />
+        <title>KRI8 - FAQ</title>
+    </head>
+    <body>
+        <nav>
+            <ul class="nav-bar-logo">
+                <li><a class="nav-link" href="index.html" id="logo"><img src="images/logo.png"></a></li>
+            </ul>
+            <ul class="nav-bar">
+                <li id="tutorials">
+                    <a class="nav-link" href="tutorial.html">TUTORIALS</a>
+                    <div class="hover-dropdown tutorials-dd">
+                        <div class="invis-box"></div>
+                        <div class="invis-box">
+                            <div class="triangle"></div>
+                        </div>
+                        <div class="visible-box">
+                            <a href="#">WOOD</a>
+                            <div class="line"></div>
+                            <a href="#">LEATHER</a>
+                            <div class="line"></div>
+                            <a href="#">JEWELRY</a>
+                            <div class="line"></div>
+                            <a href="#">POTTERY</a>
+                            <div class="line"></div>
+                            <a href="#">METAL</a>
+                        </div>
+                    </div>
+                </li>
+                <li id="coworking">
+                    <a class="nav-link" id="coworkingbtn">CO-WORKING SPACE</a>
+                    <div class="hover-dropdown coworking-dd">
+                        <div class="invis-box"></div>
+                        <div class="invis-box">
+                            <div class="triangle"></div>
+                        </div>
+                        <div class="visible-box">
+                            <a href="#">BALI</a>
+                            <div class="line"></div>
+                            <a href="#">BALIKPAPAN</a>
+                            <div class="line"></div>
+                            <a href="#">DKI JAKARTA</a>
+                            <div class="line"></div>
+                            <a href="#">MEDAN</a>
+                            <div class="line"></div>
+                            <a href="#">SURABAYA</a>
+                            <div class="line"></div>
+                            <a href="#">YOGYAKARTA</a>
+                        </div>
+
+                        <div id="myModal" class="modal">
+
+                        <div class="modal-content">
+                            <a class="close" href='#'>x</a>
+                                <p class="content">Turn on location to see nearest Co-Working space?</p>
+                                <div class="form-button-row">
+                                  <button type="button" onclick="window.location.href='conear.html';" id="yes">YES</button>
+                                  <button type="button" onclick="window.location.href='coworking.html';" id="no">NO</button>
+                                </div>
+                            </div> 
+                        </div>
+
+                        <script>
+                            // Get the modal
+                            var modal = document.getElementById("myModal");
+
+                            // Get the button that opens the modal
+                            var btn = document.getElementById("coworkingbtn");
+
+                            // Get the <span> element that closes the modal
+                            var span = document.getElementsByClassName("close")[0];
+
+                            // When the user clicks the button, open the modal 
+                            btn.onclick = function() {
+                              modal.style.display = "block";
+                            }
+
+                            // When the user clicks on <span> (x), close the modal
+                            span.onclick = function() {
+                              modal.style.display = "none";
+                            }
+
+                            // When the user clicks anywhere outside of the modal, close it
+                            window.onclick = function(event) {
+                              if (event.target == modal) {
+                                modal.style.display = "none";
+                              }
+                            }
+                        </script>
+                    </div>
+                </li>
+                <li id="rentbuy">
+                    <a class="nav-link" href="rentbuy.html">RENT/BUY</a>
+                    <div class="hover-dropdown rentbuy-dd">
+                        <div class="invis-box"></div>
+                        <div class="invis-box">
+                            <div class="triangle"></div>
+                        </div>
+                        <div class="visible-box">
+                            <a href="#">WOOD</a>
+                            <div class="line"></div>
+                            <a href="#">LEATHER</a>
+                            <div class="line"></div>
+                            <a href="#">JEWELRY</a>
+                            <div class="line"></div>
+                            <a href="#">POTTERY</a>
+                            <div class="line"></div>
+                            <a href="#">METAL</a>
+                        </div>
+                    </div>
+                </li>
+                <li id="handmade">
+                    <a class="nav-link" href="handmade.html">HANDMADE</a>
+                    <div class="hover-dropdown handmade-dd">
+                        <div class="invis-box"></div>
+                        <div class="invis-box">
+                            <div class="triangle"></div>
+                        </div>
+                        <div class="visible-box">
+                            <a href="#">WOOD</a>
+                            <div class="line"></div>
+                            <a href="#">LEATHER</a>
+                            <div class="line"></div>
+                            <a href="#">JEWELRY</a>
+                            <div class="line"></div>
+                            <a href="#">POTTERY</a>
+                            <div class="line"></div>
+                            <a href="#">METAL</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="shopping-cart">
+                    <a class="nav-link" href="#"><img class="shopping-cart" src="images/cart-grey.png"></a>
+                </li>
+                <li id="user-logo" class="user-logo">
+                    <a class="nav-link"><img class="user-logo" src="images/user-grey.png"></a>
+                    <div class="hover-dropdown user-dd">
+                        <div class="invis-box">
+                            <div class="triangle"></div>
+                        </div>
+                        <div class="visible-box">
+                            <a href="profile.html">EDIT PROFILE</a>
+                            <div class="line"></div>
+                            <a href="#">LOGOUT</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer-subheader">
+            <div class="footer-subheader-title">
+                <p>FREQUENTLY ASKED QUESTIONS</p>
+            </div>
+        </div>
+        <div class="faq-main-container">
+            <div class="faq-header">
+                <p>ACCOUNT INFORMATION</p>
+            </div>
+                <div class="faq-text1">
+                    <p>1. UPDATE OR FORGOTTEN PASSWORD</p>
+                </div>
+                <div class="faq-text2">
+                    <p>If you want to change your password, or have forgotten it, go the first page where you LOG IN and click on "Forgot Password". It will walk you through the process in 2 easy steps, then hit submit and it's complete.</p>
+                </div>
+            <div class="faq-header">
+                  <p>SHIPPING</p>
+            </div>
+                <div class="faq-text1">
+                    <p>1. DOES KRI8 SHIP INTERNATIONALLY?</p>
+                </div>
+                <div class="faq-text2">
+                    <p>We’re really sorry but we currently only ship across Indonesia.</p>
+                </div>
+                <div class="faq-text1">
+                    <p>2. HOW MUCH DO I PAY FOR SHIPPING?</p>
+                </div>
+                <div class="faq-text2">
+                    <p>The cost for shipping your order depends on your address, and the service level you choose for shipping (JNE, JnT, Ninja Express, Sicepat). Our commitment to you is that we are 100% transparent with the shipping cost at checkout, keeping it as low as possible and through our logistics partner select the best and most reliable carriers available to ensure your order arrives on time.</p>
+                </div>
+                <div class="faq-text1">
+                    <p>3. WHAT SHIPPING SERVICE LEVELS DO YOU OFFER?</p>
+                </div>
+                <div class="faq-text2">
+                    <p>KRI8 offers both Express and Standard shipping, and at checkout you can choose which one you prefer. We are currently working together with JNE, JNE OKE, JNT, Ninja Express, AntarAja, and SiCepat.</p>
+                </div>
+                <div class="faq-text1">
+                    <p>4. HOW LONG WILL IT TAKE FOR MY ORDER TO ARRIVE?</p>
+                </div>
+                <div class="faq-text2">
+                    <p>The delivery time varies depending on the carrier, the service level and your address.</p>
+                </div>
+                <div class="faq-text1">
+                    <p>5. HOW DO I TRACK MY ORDER?</p>
+                </div>
+                <div class="faq-text2">
+                    <p>KRI8 provides you a tracking number and link when your order is being fulfilled which typically happens within 24 hours to 2 business days after you place your order (for orders placed over the weekend or during holidays it may take a bit longer). You can track the status of your order through this tracking number and link where updates are posted as your parcel is in transit and delivered to you.</p>
+                </div>
+                <div class="faq-text1">
+                    <p>6. RECEIVED A DEFECTIVE PRODUCT  OR ITEM?</p>
+                </div>
+                <div class="faq-text2">
+                    <p>If you have received a wrong or defective item, please contact our Customer Support Team. We will investigate on the issue and replace with a new product. You do not have to return the product to us. Please make sure to enter your contact information and photo(s) of the parcel for better and faster assistance.</p>
+                </div> 
+            <div class="faq-header">
+                  <p>PAYMENTS</p>
+            </div>
+                <div class="faq-text1">
+                    <p>1. WHAT PAYMENT METHODS DO YOU ACCEPT?</p>
+                </div>
+                <div class="faq-text2">
+                    <p>We currently accept BCA, GOPAY, and OVO.</p>
+                </div>   
+                <div class="faq-text1">
+                    <p>2. DO YOU ACCEPT REFUNDS?</p>
+                </div>
+                <div class="faq-text2">
+                    <p>We are really sorry, currently we do not accept refunds of our products. Online purchases are eligible for online store credit or an exchange.</p>
+                </div>
+            <div class="faq-header">
+                  <p>RETURN POLICY</p>
+            </div>
+                <div class="invis-box"></div>
+                <div class="faq-text2">
+                    <p>Kri8 offers a 30 day return / exchange policy on all items. If you are not completely satisfied with your purchase you may return to us either  by shipping it back or in person. Please include the order number, puchaser name, a contact name/number/email and the reason for the return.<p>
+                    <p>Returned items  must be unworn, unwashed, undamaged, and unused - with all original tags attached. Do not remove protective slip.</p>
+                </div> 
+            <div class="faq-header">
+                  <p>RETURN & EXCHANGE</p>
+            </div>
+                <div class="invis-box"></div>
+                <div class="faq-text2">
+                    <p>If you are not 100% satisfied with your purchase, you can return the product and get a full refund or exchange the product for another one, be it similar or not. ... Any product you return must be in the same condition you received it and in the original packaging. Please keep the receipt.</p>
+                </div>  
+            <div class="invis-box"></div>
+            <div class="invis-box"></div>     
+            <a class="nav-link" href="#">FOR MORE QUESTIONS, CONTACT OUR CUSTOMER SERVICE HERE</a>
+        </div>
+        <footer>
+            <ul class="left-footer">
+                <div class="faq">
+                    <li><a class="nav-link-clicked" href="faq.html">FAQ</a></li>
+                </div>
+                <div class="footer-conditions">
+                    <li><a class="nav-link" href="privacy-policy.html">Privacy and Policy</a></li>
+                </div>
+                <div>
+                    <li><a class="nav-link" href="terms-conditions.html">Terms of Service</a></li>
+                </div>
+            </ul>
+            <ul class="right-footer">
+                <li><a class="nav-link" href="#"><img class="contact-logo" src="images/whatsapp.png"></a></li>
+
+                <li><a class="nav-link" href="#"><img class="contact-logo" src="images/instagram.png"></a></li>
+
+                <li><a class="nav-link" href="#"><img class="contact-logo" src="images/email.png"></a></li>
+
+            </ul>
+        </footer>
+    </body>
+</html>

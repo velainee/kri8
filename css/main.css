@@ -1,0 +1,1464 @@
+body,
+html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    text-align: center;
+    font-family: 'Rambla', sans-serif;
+}
+
+/* NAVIGATION BAR */
+nav {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    background-color: #67483B;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    display: inline-block;
+}
+
+nav ul.nav-bar {
+    text-align: right;
+    padding-top: 12.5px;
+    margin-right: 10px;
+}
+
+nav ul.nav-bar-logo {
+    text-align: center;
+    padding: 0.2px 0 5.5px 40px;
+    background-color: #67483B;
+}
+
+nav ul.nav-bar-logo li {
+    width: 60px;
+    height: 60px;
+    margin: 0;
+}
+
+nav ul.nav-bar-logo li a {
+    height: 0;
+    width: 0;
+}
+
+nav ul.nav-bar-logo li a img{
+    height: 60px;
+    width: 60px;
+    margin: 0px 5px;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 22px;
+    margin: 0 10px;
+    padding-top: 5px;
+    font-weight: 700;
+    vertical-align: middle;
+}
+
+nav ul li.shopping-cart {
+    height: 35px;
+    padding-left: 10px;
+}
+
+nav ul li.user-logo {
+    height: 35px;
+    margin-right: 30px;
+}
+
+nav ul li a.nav-link-clicked {
+    text-decoration: none;
+    color: #FFF;
+    cursor: pointer;
+}
+
+nav ul li a.nav-link{
+    text-decoration: none;
+    color: #ADA59B;
+    cursor: pointer;
+}
+
+nav ul li a img {
+    height: 50px;
+}
+
+nav ul li a img.user-logo {
+    height: 35px;
+    margin-left: -1px;
+    cursor: default;
+}
+
+nav ul li a img.shopping-cart {
+    height: 35px;
+}
+
+/* NAVIGATION BAR DROP-DOWN MENUS */
+div.hover-dropdown {
+    display: none;
+    position: absolute;
+    text-align: left;
+    width: fit-content;
+    z-index: 1;
+}
+
+div.hover-dropdown div.visible-box {
+    background-color: #b99183;
+    padding: 12px 20px;
+}
+
+div.hover-dropdown div.invis-box {
+    width: 100%;
+    height: 17px;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+}
+
+div.hover-dropdown div.triangle {
+    width: 0;
+    height: 0;
+    display: inline-block;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid #b99183;
+}
+
+div.hover-dropdown div.line {
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+}
+
+div.hover-dropdown a {
+    color: #fff;
+    padding: 5px 40px 5px 15px;
+    margin: 0;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: lighter;
+}
+
+li#tutorials:hover div.tutorials-dd {
+    display: block;
+    margin-left: -30px;
+}
+
+li#coworking:hover div.coworking-dd {
+    display: block;
+    margin-left: 8px;
+}
+
+li#rentbuy:hover div.hover-dropdown a {
+    padding-right: 80px;
+}
+
+li#rentbuy:hover div.rentbuy-dd {
+    display: block;
+    margin-left: -45px;
+}
+
+li#handmade:hover div.handmade-dd {
+    display: block;
+    margin-left: -25px;
+}
+
+li#user-logo:hover div.user-dd {
+    display: block;
+    margin-left: -70px;
+}
+
+/* HOME PAGE HEADER */
+div.header {
+    padding-top: 70px;
+    min-height: 55%;
+    background-image: url(../images/header-slide-1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.header div.bottom-right-text {
+    display: block;
+    position: absolute;
+    width: 99%;
+    text-align: right;
+    bottom: 35%;
+}
+
+div.header div.bottom-right-text p {
+    color: #fff;
+    font-size: 36px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+/* HOME PAGE DEALS */
+div.deals {
+    width: 100%;
+    background-color: #F6F6F2;
+    padding: 150px 0 150px 0;
+}
+
+div.deals div.deal-heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+div.deals div.deal-heading div.heading-title {
+    display: inline-block;
+    text-align: left;
+}
+
+div.deals div.deal-heading div.heading-title p {
+    margin: 0;
+    font-size: 36px;
+}
+
+div.deals div.deal-heading div.heading-details {
+    display: inline-block;
+    text-align: right;
+    margin-top: 16px;
+}
+
+div.deals div.deal-heading div.heading-details p {
+    margin: 0;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+div.deals div.deal-heading div.heading-details p a {
+    color: #000;
+}
+
+div.deals div.deal-product-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 0 80px;
+}
+
+div.deals div.deal-product-list div.product {
+    width: 28%;
+    text-align: left;
+}
+
+div.deals div.deal-product-list img {
+    width: 100%;
+    height: 65%;
+    border: solid 1px rgba(0, 0, 0, 0.2);
+}
+
+div.deals div.deal-product-list div.product p.product-name {
+    font-size: 24px;
+    margin: 0;
+    padding: 10px 5px 0 5px;
+    font-weight: 700;
+}
+
+div.deals div.deal-product-list div.product div.invis-box {
+    width: 100%;
+    height: 31px;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+}
+
+div.deals div.deal-product-list div.product div.product-details {
+    padding: 15px 5px 0 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.deals div.deal-product-list div.product div.product-details p {
+    font-size: 24px;
+    margin: 0;
+}
+
+
+div.deals div.deal-product-list div.product div.product-details div.product-price {
+    display: inline-block;
+}
+
+div.deals div.deal-product-list div.product div.product-details div.product-rating {
+    display: inline-block;
+}
+
+div.deals div.deal-product-list div.product div.product-details div.product-rating p {
+    font-size: 18px;
+    display: inline-block;
+}
+
+div.deals div.deal-product-list div.product div.product-details div.product-rating i {
+    font-size: 18px;
+    display: inline-block;
+}
+
+div.deals div.deal-product-list div.product div.product-details div.product-rating i.star-lit {
+    color: orange;
+}
+
+div.deals div.deal-product-list div.product div.product-details div.product-rating i.star-dim {
+    color: gray;
+}
+
+/* HOME PAGE ABOUT US */
+div.about {
+    width: 100%;
+    background-color: #979B97;
+    padding: 30px 0 80px 0;
+    color: #fff;
+    text-align: left;
+}
+
+div.about div.heading-title p {
+    margin: 0;
+    font-size: 38px;
+    margin-left: 30px;
+}
+
+div.about div.heading-details {
+    width: 90%;
+    padding: 30px 0 30px 60px;
+}
+
+div.about div.heading-details p {
+    margin: 0 0 30px 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+div.about div.heading-details p.about-us-text {
+    text-indent: 25px;
+}
+
+div.about div.heading-details p.heading-details-title {
+    font-size: 26px;
+}
+
+div.about div.heading-details p.heading-details-title span {
+    font-size: 14px;
+}
+
+div.page-subheader form {
+    display: inline-block;
+}
+
+div.page-subheader form input#search-bar {
+    height: 40px;
+    font-size: 18px;
+    padding: 0 350px 0 15px;
+    border: none;
+}
+
+div.page-subheader form button#submit-search {
+    height: 40px;
+    font-size: 18px;
+    margin: 0;
+    margin-left: -3px;
+    color: #fff;
+    background: #ECDCD9;
+    padding: 0 18px;
+    border: none;
+    cursor: pointer;
+}
+
+/* FOOTER THINGS TITLE */
+div.footer-subheader {
+    padding: 100px 0 0 0px;
+    width: 100%;
+    background-color: #F6F6F2;
+    text-align: left;
+}
+
+div.footer-subheader div.footer-subheader-title {
+    display: inline-block;
+}
+
+div.footer-subheader div.footer-subheader-title p {
+    margin: 0;
+    padding: 20px 0 0 105px;
+    color: #68483C;
+    font-size: 45px;
+    font-weight: 700;
+
+}
+
+
+/* CO-WORKING SPACE PAGE */
+div.coworking-main-container {
+    display: flex;
+}
+
+/* CO-WORKING SPACE RIGHT SIDEBAR */
+div.coworking-main-container div.coworking-right-container {
+    display: inline-block;
+    background-color: #F6F6F2;
+    width: 100%;
+    padding: 100px 0 65px 0;
+}
+
+div.coworking-main-container div.coworking-right-container form input#search-bar {
+    height: 40px;
+    font-size: 18px;
+    padding: 0 550px 0 15px;
+    border: none;
+}
+div.coworking-main-container div.coworking-right-container form button#submit-search {
+    height: 40px;
+    font-size: 18px;
+    margin: 0;
+    margin-left: -3px;
+    color: #fff;
+    background: #ECDCD9;
+    padding: 0 18px;
+    border: none;
+    cursor: pointer;
+}
+
+
+div.coworking-main-container div.coworking-right-container div.coworking-space div.coworking-space-invis-box {
+    height: 35px;
+    background-color: rgba(0,0,0,0);
+}
+
+div.coworking-main-container div.coworking-right-container div.coworking-space {
+    position: relative;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px rgba(74, 69, 69, 0.64)
+}
+
+div.coworking-main-container div.coworking-right-container div.coworking-space a.nav-link img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+div.coworking-main-container div.coworking-right-container div.coworking-space p.place-name {
+    font-size: 96px;
+    margin: 0;
+    padding: 15px 0 5px 0;
+    color: #fffafa;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.coworking-main-container div.coworking-right-container div.coworking-space p.place-details {
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+    color: #fffafa;
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* CO-WORKING SPACE NEAR YOU */
+div.conear-main-container {
+    display: flex;
+}
+
+div.conear-main-container {
+    display: inline-block;
+    background-color: #F6F6F2;
+    width: 100%;
+    padding: 100px 0 65px 0;
+}
+
+div.conear-main-container form input#search-bar {
+    height: 40px;
+    font-size: 18px;
+    padding: 0 550px 0 15px;
+    border: none;
+}
+
+div.conear-main-container form button#submit-search {
+    height: 40px;
+    font-size: 18px;
+    margin: 0;
+    margin-left: -3px;
+    color: #fff;
+    background: #ECDCD9;
+    padding: 0 18px;
+    border: none;
+    cursor: pointer;
+}
+
+div.conear-main-container div.conear-space div.conear-space-invis-box {
+    height: 35px;
+    background-color: rgba(0,0,0,0);
+}
+
+div.conear-main-container div.conear-space-invis-box2 {
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+}
+
+div.conear-main-container div.conear-space  {
+    position: relative;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px rgba(74, 69, 69, 0.64)
+}
+
+div.conear-main-container div.conear-space  a.nav-link img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+div.conear-main-container div.conear-space  p.place-name {
+    font-size: 96px;
+    margin: 0;
+    padding: 15px 0 5px 0;
+    color: #fffafa;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.conear-main-container div.conear-space  p.place-details {
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+    color: #fffafa;
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.conear-main-container div.row1 {
+    display: flex;
+    padding-top: 35px;
+}
+
+div.conear-main-container div.row1 div.column1 {
+    flex: 50%;
+}
+
+div.conear-main-container div.row1 div.column1 img {
+    width: 570px;
+    height: 300px;
+    object-fit: cover;
+    border: solid 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+div.conear-main-container div.row1 div.column1 div.conear-item p.item-cat {
+    font-size: 18px;
+    margin: 0;
+    padding: 17px 100px 5px 135px;
+    color: rgba(0,0,0,1);
+    text-align: left;
+}
+
+div.conear-main-container div.row1 div.column1 div.conear-item div.heading {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.conear-main-container div.row1 div.column1 div.conear-item div.heading a.item-name {
+    font-size: 36px;
+    margin: 0; 
+    display:block;
+    padding: 12px 100px 5px 135px;
+    color: #62483D;
+    text-align: left;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+div.conear-main-container div.row1 div.column1 div.conear-item div.heading div.item-rate {
+    padding: 25px 130px 0 0;
+    display: inline-block;
+}
+
+div.conear-main-container div.row1 div.column1 div.conear-item div.heading div.item-rate i {
+    font-size: 18px;
+    display: inline-block;
+}
+
+div.conear-main-container div.row1 div.column1 div.conear-item div.heading div.item-rate i.star-lit {
+    color: orange;
+}
+
+div.conear-main-container div.row1 div.column1 div.conear-item div.heading div.item-rate i.star-dim {
+    color: grey;
+}
+
+div.conear-main-container div.row1 div.column1 div.conear-item p.item-price {
+    font-size: 20px;
+    margin-right: 100px;
+    padding: 0 0 0 135px;
+    color: rgba(0, 0, 0, 1);
+    text-align: left;
+}
+
+
+/* TUTORIAL SPACE PAGE */
+div.tutorial-main-container {
+    display: flex;
+}
+
+/* TUTORIAL SPACE LEFT SIDEBAR */
+div.tutorial-main-container div.tutorial-left-container {
+    display: inline-block;
+    background-color: #D8C4B9;
+    background-image: url(../images/sidebar.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    width: 23.5%;
+    padding-top: 100px;
+    height: 100%;
+    width: 288px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;/
+    padding-top: 20px;
+}
+
+div.tutorial-main-container div.tutorial-left-container div.sidebar-button {
+    background-color: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    width: 80%;
+    text-align: left;
+    margin: 0 0 15px 0;
+    padding: 20px 0 20px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+div.tutorial-main-container div.tutorial-left-container div.sidebar-button p {
+    margin: 0;
+    padding: 0;
+    color: #66463A;
+    font-size: 24px;
+}
+
+div.tutorial-main-container div.tutorial-left-container div.sidebar-button-white {
+    background-color: #FFFFFF;
+    display: inline-block;
+    width: 80%;
+    text-align: left;
+    margin: 0 0 15px 0;
+    padding: 20px 0 20px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+div.tutorial-main-container div.tutorial-left-container div.sidebar-button-white p {
+    margin: 0;
+    padding: 0;
+    color: #66463A;
+    font-size: 24px;
+}
+
+div.tutorial-main-container div.tutorial-left-container div.product-types-title {
+    display: inline-block;
+    width: 80%;
+    text-align: left;
+}
+
+div.tutorial-main-container div.tutorial-left-container div.product-types-title p {
+    font-size: 32px;
+    margin: 60px 0 10px 0;
+    margin-left: -8px;
+    padding: 0;
+    color: #66463A;
+}
+
+/* TUTORIAL RIGHT SIDEBAR */
+
+
+div.tutorial-main-container div.tutorial-right-container {
+    display: inline-block;
+    background-color: #F6F6F2;
+    width: 80%;
+    padding: 100px 40px 60px 40px;
+    margin-left: 288px;
+}
+
+div.tutorial-main-container div.tutorial-right-container form {
+    display: inline-block;
+    margin: 0 0 35px 0;
+}
+
+div.tutorial-main-container div.tutorial-right-container form input#search-bar {
+    height: 40px;
+    font-size: 18px;
+    padding: 0 350px 0 15px;
+    border: none;
+}
+
+div.tutorial-main-container div.tutorial-right-container form button#submit-search {
+    height: 40px;
+    font-size: 18px;
+    margin: 0;
+    margin-left: -3px;
+    color: #fff;
+    background: #ECDCD9;
+    padding: 0 18px;
+    border: none;
+    cursor: pointer;
+}
+
+div.tutorial-main-container div.tutorial-right-container div.row {
+    display: flex;
+}
+
+div.tutorial-main-container div.tutorial-right-container div.row div.column {
+    flex: 50%;
+}
+
+
+div.tutorial-main-container div.tutorial-right-container div.row div.column div.tutorial-vid img {
+    width: 590px;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+
+}
+
+
+div.tutorial-main-container div.tutorial-right-container div.row div.column div.tutorial-vid a.vid-name {
+    font-size: 36px;
+    margin:0 auto;    
+    display:block;
+    padding: 5px 0px 0px 35px;
+    color: #66463A;
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+div.tutorial-main-container div.tutorial-right-container div.row div.column div.tutorial-vid p.vid-details {
+    font-size: 18px;
+    margin: 0;
+    padding: 20px 0px 5px 35px;
+    text-align: left;
+}
+
+div.tutorial-main-container div.tutorial-right-container div.row div.column div.tutorial-vid p.vid-explain {
+    font-size: 18px;
+    margin: 0;
+    padding: 10px 40px 77px 35px;
+    text-align: left;
+    line-height: 23px;
+}
+
+
+/* RENT BUY SPACE PAGE */
+div.rentbuy-main-container {
+    display: flex;
+}
+
+/* RENT BUY SPACE LEFT SIDEBAR */
+div.rentbuy-main-container div.rentbuy-left-container {
+    display: inline-block;
+    background-color: #D8C4B9;
+    background-image: url(../images/sidebar.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    width: 23.5%;
+    padding-top: 100px;
+    height: 100%;
+    width: 288px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;/
+    padding-top: 20px;
+}
+
+div.rentbuy-main-container div.rentbuy-left-container div.rentbuy-button {
+    background-color: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    width: 80%;
+    text-align: left;
+    margin: 0 0 15px 0;
+    padding: 20px 0 20px 20px;
+    border-radius: 5px;
+}
+
+div.rentbuy-main-container div.rentbuy-left-container div.sidebar-button {
+    background-color: rgba(236, 225, 221, 0.7);
+    display: inline-block;
+    width: 80%;
+    text-align: left;
+    margin: 0 0 15px 0;
+    padding: 20px 0 20px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+div.rentbuy-main-container div.rentbuy-left-container div.sidebar-button p {
+    margin: 0;
+    padding: 0;
+    color: #66463A;
+    font-size: 24px;
+}
+
+div.rentbuy-main-container div.rentbuy-left-container div.sidebar-button-white {
+    background-color: #FFFFFF;
+    display: inline-block;
+    width: 80%;
+    text-align: left;
+    margin: 0 0 15px 0;
+    padding: 20px 0 20px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+div.rentbuy-main-container div.rentbuy-left-container div.sidebar-button-white p {
+    margin: 0;
+    padding: 0;
+    color: #66463A;
+    font-size: 24px;
+}
+
+
+div.rentbuy-main-container div.rentbuy-left-container div.product-types-title {
+    display: inline-block;
+    width: 80%;
+    text-align: left;
+}
+
+div.rentbuy-main-container div.rentbuy-left-container div.product-types-title p {
+    font-size: 32px;
+    margin: 60px 0 10px 0;
+    padding: 0;
+    color: #66463A;
+    margin-left: -8px;
+}
+
+/* RENT BUY RIGHT SIDEBAR */
+div.rentbuy-main-container div.rentbuy-right-container {
+    display: inline-block;
+    background-color: #F6F6F2;
+    width: 80%;
+    padding: 100px 40px 0px 40px;
+    margin-left: 288px;
+}
+
+
+/* RENT BUY RIGHT ITEMS */
+
+div.rentbuy-main-container div.rentbuy-right-container form {
+    display: inline-block;
+}
+
+div.rentbuy-main-container div.rentbuy-right-container form input#search-bar {
+    height: 40px;
+    font-size: 18px;
+    padding: 0 350px 0 15px;
+    border: none;
+}
+
+div.rentbuy-main-container div.rentbuy-right-container form button#submit-search {
+    height: 40px;
+    font-size: 18px;
+    margin: 0;
+    margin-left: -3px;
+    color: #fff;
+    background: #ECDCD9;
+    padding: 0 18px;
+    border: none;
+    cursor: pointer;
+}
+
+div.rentbuy-main-container div.rentbuy-right-container div.row1 {
+    display: flex;
+    padding-top: 35px;
+}
+
+div.rentbuy-main-container div.rentbuy-right-container div.row1 div.column1 {
+    flex: 50%;
+}
+
+div.rentbuy-main-container div.rentbuy-right-container div.row1 div.column1 img {
+    width: 570px;
+    height: 300px;
+    object-fit: cover;
+    border: solid 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+div.rentbuy-main-container div.rentbuy-right-container div.row1 div.column1 div.rentbuy-item p.item-cat {
+    font-size: 20px;
+    margin: 0;
+    padding: 17px 100px 5px 38px;
+    color: rgba(0,0,0,1);
+    text-align: left;
+}
+
+div.rentbuy-main-container div.rentbuy-right-container div.row1 div.column1 div.rentbuy-item a.item-name {
+    font-size: 26px;
+    margin:0 auto;    
+    display:block;
+    padding: 12px 100px 5px 38px;
+    color: #62483D;
+    text-align: left;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+div.rentbuy-main-container div.rentbuy-right-container div.row1 div.column1 div.rentbuy-item div.item-detail {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.rentbuy-main-container div.rentbuy-right-container div.row1 div.column1 div.rentbuy-item div.invis-box {
+    width: 100%;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+}
+
+div.rentbuy-main-container div.rentbuy-right-container div.row1 div.column1 div.rentbuy-item div.item-detail p.item-price {
+    font-size: 20px;
+    margin: 0;
+    padding: 12px 0px 50px 38px;
+    color: rgba(0, 0, 0, 1);
+}
+
+div.rentbuy-main-container div.rentbuy-right-container div.row1 div.column1 div.rentbuy-item div.item-detail div.item-rate {
+    padding: 12px 42px 50px 0px;
+    display: inline-block;
+}
+
+div.rentbuy-main-container div.rentbuy-right-container div.row1 div.column1 div.rentbuy-item div.item-detail div.item-rate i {
+    font-size: 18px;
+    display: inline-block;
+}
+
+div.rentbuy-main-container div.rentbuy-right-container div.row1 div.column1 div.rentbuy-item div.item-detail div.item-rate i.star-lit {
+    color: orange;
+}
+
+div.rentbuy-main-container div.rentbuy-right-container div.row1 div.column1 div.rentbuy-item div.item-detail div.item-rate i.star-dim {
+    color: grey;
+}
+
+
+div.rentbuy-main-container div.rentbuy-right-container div.row2 {
+    display: flex;
+    padding: 40px 0 0 0;
+}
+
+div.rentbuy-main-container div.rentbuy-right-container div.row2 div.column2 {
+    flex: 33%;
+}
+
+div.rentbuy-main-container div.rentbuy-right-container div.row2 div.column2 img {
+    width: 352px;
+    height: 270px; 
+    object-fit: cover;
+    border:solid 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+div.rentbuy-main-container div.rentbuy-right-container div.row2 div.column2 div.rentbuy-item p.item-cat {
+    font-size: 18px;
+    margin: 0;
+    padding: 17px 100px 5px 38px;
+    color: rgba(0,0,0,1);
+    text-align: left;
+}
+
+div.rentbuy-main-container div.rentbuy-right-container div.row2 div.column2 div.rentbuy-item a.item-name {
+    font-size: 22px;
+    margin:0 auto;    
+    display:block;
+    padding: 12px 40px 5px 38px;
+    color: #62483D;
+    text-align: left;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+div.rentbuy-main-container div.rentbuy-right-container div.row2 div.column2 div.rentbuy-item div.item-detail {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px 50px 38px;
+    text-align: center;
+}
+
+div.rentbuy-main-container div.rentbuy-right-container div.row2 div.column2 div.rentbuy-item div.invis-box {
+    width: 100%;
+    height: 26px;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+}
+
+div.rentbuy-main-container div.rentbuy-right-container div.row2 div.column2 div.rentbuy-item div.item-detail p.item-price {
+    font-size: 18px;
+    margin: 0;
+    padding: 12px 0px 50px 0px;
+    color: rgba(0, 0, 0, 1);
+}
+
+div.rentbuy-main-container div.rentbuy-right-container div.row2 div.column2 div.rentbuy-item div.item-detail div.item-rate {
+    padding: 12px 38px 50px 0px;
+    display: inline-block;
+}
+
+div.rentbuy-main-container div.rentbuy-right-container div.row2 div.column2 div.rentbuy-item div.item-detail div.item-rate i {
+    font-size: 18px;
+    display: inline-block;
+}
+
+div.rentbuy-main-container div.rentbuy-right-container div.row2 div.column2 div.rentbuy-item div.item-detail div.item-rate i.star-lit {
+    color: orange;
+}
+
+div.rentbuy-main-container div.rentbuy-right-container div.row2 div.column2 div.rentbuy-item div.item-detail div.item-rate i.star-dim {
+    color: grey;
+}
+
+
+/* PRIVACY AND POLICY PAGE - TERMS AND CONDITIONS PAGE */
+div.privacy-main-container {
+    display: inline-block;
+    background-color: #F6F6F2;
+    max-width: 100%;
+    text-align: left;
+    padding: 70px 0 100px 105px;
+}
+
+div.privacy-main-container div.privacy-text {
+    width: 50%;
+    margin: 0;
+}
+
+div.privacy-main-container div.privacy-text div.text1 p {
+    margin: 0;
+    color: #66463A;
+    padding: 0 0 30px 0;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+div.privacy-main-container div.privacy-text div.text2 p {
+    margin: 0;
+    color: #66463A;
+    font-weight: 700;
+    padding: 10px 0 15px 0;
+    font-size: 20px;
+}
+
+
+/* FAQ PAGE */
+div.faq-main-container {
+    display: inline-block;
+    background-color: #F6F6F2;
+    max-width: 100%;
+    text-align: left;
+    padding: 40px 0px 100px 105px;
+}
+
+div.faq-main-container div.faq-header {
+    padding: 18px 0 0 0;
+    width: 90%;
+    display: flex;
+    vertical-align: middle;
+    text-align: left;
+    display: inline-block;
+}
+
+div.faq-main-container div.faq-header p {
+    margin: 0;
+    padding: 0 80px 0 0px;
+    color: #66463A;
+    font-size: 30px;
+}
+
+div.faq-main-container div.invis-box {
+    width: 100%;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+}
+
+div.faq-main-container div.faq-text1 {
+    width: 75%;
+    margin: 0;
+}
+
+div.faq-main-container div.faq-text1 p {
+    margin: 0;
+    font-weight: 700;
+    color: #66463A;
+    padding: 20px 0 15px 0px;
+    font-size: 20px;
+}
+
+div.faq-main-container div.faq-text2 {
+    width: 50%;
+    margin: 0;
+}
+
+div.faq-main-container div.faq-text2 p {
+    margin: 0;
+    font-weight: 400;
+    color: #66463A;
+    padding: 0 0 20px 0px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+div.faq-main-container a.nav-link {
+    font-weight: 700;
+    color: #66463A;
+    font-size: 18px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* USER PROFILE PAGE */
+div.profile-main-container {
+    width: 100%;
+    height: 100%;
+    background-color: #F6F6F2;
+    display: flex;
+}
+
+/* USER PROFILE FORM STYLING */
+div.form-row-list {
+    text-align: left;
+}
+
+div.form-row-list div.form-double-row {
+    width: 100%;
+    display: flex;
+    text-align: left;
+    margin-bottom: 23px;
+}
+
+div.form-row-list div.form-double-row p {
+    margin: 0 0 1px 0;
+    flex: 30%;
+    font-size: 20px;
+}
+
+div.form-row-list div.form-double-row input.form-single-input {
+    width: 100%;
+    height: 10px;
+    display: inline-block;
+    border: solid 1px #000;
+    border-top: solid 1px rgba(0,0,0,0);
+    background: rgba(0,0,0,0);
+    margin: 0 5px 0 0;
+}
+
+div.form-row-list div.form-double-row input.form-single-input2 {
+    width: 100%;
+    height: 10px;
+    display: inline-block;
+    border: solid 1px #000;
+    border-top: solid 1px rgba(0,0,0,0);
+    background: rgba(0,0,0,0);
+    margin: 0 0 0 5px;
+}
+
+div.form-row-list div.form-single-row {
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 23px;
+}
+
+div.form-row-list div.form-single-row p {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+}
+
+div.form-row-list div.form-single-row input.form-single-input {
+    width: 100%;
+    height: 10px;
+    display: inline-block;
+    border: solid 1px #000;
+    border-top: solid 1px rgba(0,0,0,0);
+    background: rgba(0,0,0,0);
+}
+
+/* USER PROFILE PAGE LEFT SUBSECTION */
+div.profile-main-container div.profile-left-container {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 250px;
+    padding: 70px 0px 70px 0;
+    text-align: left;
+}
+
+div.profile-main-container div.profile-left-container div.user-profile-title {
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+}
+
+div.profile-main-container div.profile-left-container div.user-profile-title p {
+    font-size: 36px;
+    margin: 0;
+    padding: 80px 0 100px 0;
+    text-align: left;
+}
+
+div.profile-main-container div.profile-left-container div.user-profile-photo {
+    display: inline-block;
+    height: 253px;
+    width: 253px;
+    border-radius: 50%;
+    background-color: #C4C4C4;
+    background-image: url(../images/cam-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px 30px;
+    cursor: pointer;
+}
+
+div.profile-main-container div.profile-left-container div.profile-links {
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    margin-top: 90px;
+}
+
+div.profile-main-container div.profile-left-container div.profile-links div.profile-single-link {
+    text-align: left;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+div.profile-main-container div.profile-left-container div.profile-links div.profile-single-link a {
+    color: #000;
+    display: block;
+}
+
+/* USER PROFILE PAGE RIGHT SUBSECTION */
+div.profile-main-container div.profile-right-container {
+    display: flex;
+    flex-direction: column;
+    width:37%;
+    padding: 190px 40px 0 40px;
+}
+
+div.profile-main-container div.profile-right-container div.profile-detail-form {
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+div.profile-main-container div.profile-right-container div.form-button-row {
+    margin-top: 35px;
+    margin-bottom: 15px;
+    text-align: right;
+}
+
+div.profile-main-container div.profile-right-container div.form-button-row button {
+    font-size: 24px;
+    height: 50px;
+    width: 160px;
+    border: none;
+    cursor: pointer;
+}
+
+div.profile-main-container div.profile-right-container div.form-button-row button#save-profile {
+    background-color: rgba(226, 206, 186, 0.8)
+}
+
+
+/* FOOTER */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #6c706a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 15px 30px;
+    width: fit-content;
+    display: inline-block;
+}
+
+footer ul li {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin: 0;
+    letter-spacing: 1px;
+    justify-content: space-around;
+}
+
+footer ul li a.nav-link {
+    text-decoration: none;
+    color: #ADA59B;
+    cursor: pointer;
+    font-weight: lighter;
+}
+
+footer ul li a.nav-link-clicked {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: lighter;
+}
+
+footer ul li a img {
+    height: 25px;
+    margin: 0 10px;
+    display: flex;
+}
+
+footer ul.left-footer {
+    text-align: left;
+    display: flex;
+}
+
+footer ul.left-footer div.faq {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+footer ul.left-footer div.footer-conditions {
+    margin-left: 30px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+footer ul.right-footer {
+    text-align: right;
+    display: flex;
+}
+
+
+/*POP UP MODAL BOX*/
+div.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 2;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* MODAL CONTENT */
+div.modal-content {
+    background-image: url(../images/popup.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    padding: 20px;
+    width: 700px;
+    height: 170px;
+}
+
+div.modal-content p.content {
+    margin: auto;
+    font-weight: lighter;
+    width: 60%;
+    padding-top: 23px;
+    padding-bottom: 7px;
+    font-size: 32px;
+    line-height: 29px;
+    text-align: center;
+    color: #594A48;
+    line-height: 40px;
+}
+
+/* THE CLOSE BUTTON */
+div.modal-content a.close {
+    color: #FFFEFE;
+    float: right;
+    margin-top: -15px;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+div.modal-content a.close:hover,
+div.modal-content a.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* YES OR NO BUTTON */
+
+div.modal-content div.form-button-row {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+div.modal-content div.form-button-row button {
+    font-size: 18px;
+    height: 45px;
+    width: 100px;
+    margin: 0 20px;
+    border: none;
+    cursor: pointer;
+    color: background: rgba(0, 0, 0, 1);
+    font-family: 'Rambla', sans-serif;
+
+}
+
+div.modal-content div.form-button-row button#yes {
+    background-color: #C4C4C4;
+}
+
+div.modal-content div.form-button-row button#no {
+    background-color: #C4C4C4;
+
+
+
+

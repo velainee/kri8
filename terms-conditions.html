@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Rambla:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"/>
+        <link rel="icon" type="image/jpg" href="images/logo.png" />
+        <title>KRI8 - Terms of Service</title>
+    </head>
+    <body>
+        <nav>
+            <ul class="nav-bar-logo">
+                <li><a class="nav-link" href="index.html" id="logo"><img src="images/logo.png"></a></li>
+            </ul>
+            <ul class="nav-bar">
+                <li id="tutorials">
+                    <a class="nav-link" href="tutorial.html">TUTORIALS</a>
+                    <div class="hover-dropdown tutorials-dd">
+                        <div class="invis-box"></div>
+                        <div class="invis-box">
+                            <div class="triangle"></div>
+                        </div>
+                        <div class="visible-box">
+                            <a href="#">WOOD</a>
+                            <div class="line"></div>
+                            <a href="#">LEATHER</a>
+                            <div class="line"></div>
+                            <a href="#">JEWELRY</a>
+                            <div class="line"></div>
+                            <a href="#">POTTERY</a>
+                            <div class="line"></div>
+                            <a href="#">METAL</a>
+                        </div>
+                    </div>
+                </li>
+                <li id="coworking">
+                    <a class="nav-link" id="coworkingbtn">CO-WORKING SPACE</a>
+                    <div class="hover-dropdown coworking-dd">
+                        <div class="invis-box"></div>
+                        <div class="invis-box">
+                            <div class="triangle"></div>
+                        </div>
+                        <div class="visible-box">
+                            <a href="#">BALI</a>
+                            <div class="line"></div>
+                            <a href="#">BALIKPAPAN</a>
+                            <div class="line"></div>
+                            <a href="#">DKI JAKARTA</a>
+                            <div class="line"></div>
+                            <a href="#">MEDAN</a>
+                            <div class="line"></div>
+                            <a href="#">SURABAYA</a>
+                            <div class="line"></div>
+                            <a href="#">YOGYAKARTA</a>
+                        </div>
+
+                        <div id="myModal" class="modal">
+
+                        <div class="modal-content">
+                            <a class="close" href='#'>x</a>
+                                <p class="content">Turn on location to see nearest Co-Working space?</p>
+                                <div class="form-button-row">
+                                  <button type="button" onclick="window.location.href='conear.html';" id="yes">YES</button>
+                                  <button type="button" onclick="window.location.href='coworking.html';" id="no">NO</button>
+                                </div>
+                            </div> 
+                        </div>
+
+                        <script>
+                            // Get the modal
+                            var modal = document.getElementById("myModal");
+
+                            // Get the button that opens the modal
+                            var btn = document.getElementById("coworkingbtn");
+
+                            // Get the <span> element that closes the modal
+                            var span = document.getElementsByClassName("close")[0];
+
+                            // When the user clicks the button, open the modal 
+                            btn.onclick = function() {
+                              modal.style.display = "block";
+                            }
+
+                            // When the user clicks on <span> (x), close the modal
+                            span.onclick = function() {
+                              modal.style.display = "none";
+                            }
+
+                            // When the user clicks anywhere outside of the modal, close it
+                            window.onclick = function(event) {
+                              if (event.target == modal) {
+                                modal.style.display = "none";
+                              }
+                            }
+                        </script>
+                    </div>
+                </li>
+                <li id="rentbuy">
+                    <a class="nav-link" href="rentbuy.html">RENT/BUY</a>
+                    <div class="hover-dropdown rentbuy-dd">
+                        <div class="invis-box"></div>
+                        <div class="invis-box">
+                            <div class="triangle"></div>
+                        </div>
+                        <div class="visible-box">
+                            <a href="#">WOOD</a>
+                            <div class="line"></div>
+                            <a href="#">LEATHER</a>
+                            <div class="line"></div>
+                            <a href="#">JEWELRY</a>
+                            <div class="line"></div>
+                            <a href="#">POTTERY</a>
+                            <div class="line"></div>
+                            <a href="#">METAL</a>
+                        </div>
+                    </div>
+                </li>
+                <li id="handmade">
+                    <a class="nav-link" href="handmade.html">HANDMADE</a>
+                    <div class="hover-dropdown handmade-dd">
+                        <div class="invis-box"></div>
+                        <div class="invis-box">
+                            <div class="triangle"></div>
+                        </div>
+                        <div class="visible-box">
+                            <a href="#">WOOD</a>
+                            <div class="line"></div>
+                            <a href="#">LEATHER</a>
+                            <div class="line"></div>
+                            <a href="#">JEWELRY</a>
+                            <div class="line"></div>
+                            <a href="#">POTTERY</a>
+                            <div class="line"></div>
+                            <a href="#">METAL</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="shopping-cart">
+                    <a class="nav-link" href="#"><img class="shopping-cart" src="images/cart-grey.png"></a>
+                </li>
+                <li id="user-logo" class="user-logo">
+                    <a class="nav-link"><img class="user-logo" src="images/user-grey.png"></a>
+                    <div class="hover-dropdown user-dd">
+                        <div class="invis-box">
+                            <div class="triangle"></div>
+                        </div>
+                        <div class="visible-box">
+                            <a href="profile.html">EDIT PROFILE</a>
+                            <div class="line"></div>
+                            <a href="#">LOGOUT</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer-subheader">
+            <div class="footer-subheader-title">
+                <p>TERMS OF SERVICE</p>
+            </div>
+        </div>
+        <div class="privacy-main-container">
+            <div class="privacy-text">
+                <div class="text1">
+                <p>Welcome to Kri8 website. These are the terms of Service ("Terms ") for your use of services, information, tools and features on the Store and its affiliates (collectively). Kri8  offers the Store to you, the user, conditioned upon your acceptance of all terms, conditions, policies and notices stated here. </p>
+                <p>By visiting, accessing or using any part of the Store and/ or purchasing something from us, you agree to be bound by the following Terms, including those additional terms and conditions and policies referenced herein and/or available by hyperlink. These Terms apply to all users of the Store, including without limitation users who are browsers, vendors, customers, merchants, and/ or contributors of content.</p>
+                <p>Please read these Terms carefully before accessing or using our Store. If you do not agree to all the Terms, then you may not access the Store (including any feature or service offered) or make a purchase. If these Terms are considered an offer, acceptance is expressly limited to these Terms.</p>
+                <p>You can review the most current version of the Terms at any time by returning to this page. Biossance reserves the right to update, change or replace any part of these Terms by posting updates and/or changes to our Store at any time. It is your responsibility to check this page periodically for changes. Such changed Terms will take effect once we post them on this page at the Store, and your continued use of the Store following any such changes will mean that you accept and agree to them.</p>
+                <p>This Store is intended for and applicable only for residents of the United States. You must be eighteen (18) years old (or the age of majority in your jurisdiction) to purchase any products from our Store.</p>
+                <p>The headings used in these Terms are included for convenience only and will not limit or otherwise affect these Terms.</p>
+                </div>
+                <div class="text2">
+                <p>Last Updated: June 16th, 2020.</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <ul class="left-footer">
+                <div class="faq">
+                    <li><a class="nav-link" href="faq.html">FAQ</a></li>
+                </div>
+                <div class="footer-conditions">
+                    <li><a class="nav-link" href="privacy-policy.html">Privacy and Policy</a></li>
+                </div>
+                <div>
+                    <li><a class="nav-link-clicked" href="terms-conditions.html">Terms of Service</a></li>
+                </div>
+            </ul>
+            <ul class="right-footer">
+                <li><a class="nav-link" href="#"><img class="contact-logo" src="images/whatsapp.png"></a></li>
+
+                <li><a class="nav-link" href="#"><img class="contact-logo" src="images/instagram.png"></a></li>
+
+                <li><a class="nav-link" href="#"><img class="contact-logo" src="images/email.png"></a></li>
+
+            </ul>
+        </footer>
+    </body>
+</html>

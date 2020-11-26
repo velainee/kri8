@@ -259,11 +259,23 @@ div.deals div.deal-product-list img {
     border: solid 1px rgba(0, 0, 0, 0.2);
 }
 
-div.deals div.deal-product-list div.product p.product-name {
-    font-size: 24px;
+div.deals div.deal-product-list div.product p.product-cat {
+    font-size: 20px;
     margin: 0;
-    padding: 10px 5px 0 5px;
-    font-weight: 700;
+    padding: 20px 5px 15px 0;
+    color: rgba(0,0,0,1);
+    text-align: left;
+    cursor: default;
+}
+
+div.deals div.deal-product-list div.product a.product-name {
+    font-size: 26px;
+    margin: 0;
+    padding: 10px 5px 0 0px;
+    color: #62483D;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: left;
 }
 
 div.deals div.deal-product-list div.product div.invis-box {
@@ -274,13 +286,14 @@ div.deals div.deal-product-list div.product div.invis-box {
 }
 
 div.deals div.deal-product-list div.product div.product-details {
-    padding: 15px 5px 0 5px;
+    padding: 15px 5px 0 0px;
     display: flex;
     justify-content: space-between;
+    cursor: default;
 }
 
 div.deals div.deal-product-list div.product div.product-details p {
-    font-size: 24px;
+    font-size: 20px;
     margin: 0;
 }
 
@@ -290,11 +303,6 @@ div.deals div.deal-product-list div.product div.product-details div.product-pric
 }
 
 div.deals div.deal-product-list div.product div.product-details div.product-rating {
-    display: inline-block;
-}
-
-div.deals div.deal-product-list div.product div.product-details div.product-rating p {
-    font-size: 18px;
     display: inline-block;
 }
 
@@ -700,7 +708,7 @@ div.tutorial-main-container div.tutorial-left-container div.product-types-title 
 div.tutorial-main-container div.tutorial-right-container {
     display: inline-block;
     background-color: #F6F6F2;
-    width: 80%;
+    width: 100%;
     padding: 100px 40px 60px 40px;
     margin-left: 288px;
 }
@@ -864,14 +872,13 @@ div.rentbuy-main-container div.rentbuy-left-container div.product-types-title p 
 div.rentbuy-main-container div.rentbuy-right-container {
     display: inline-block;
     background-color: #F6F6F2;
-    width: 80%;
+    width: 100%;
     padding: 100px 40px 0px 40px;
     margin-left: 288px;
 }
 
 
 /* RENT BUY RIGHT ITEMS */
-
 div.rentbuy-main-container div.rentbuy-right-container form {
     display: inline-block;
 }
@@ -1458,7 +1465,6 @@ div.modal-content div.form-button-row button#yes {
 
 div.modal-content div.form-button-row button#no {
     background-color: #C4C4C4;
-
 
 
 

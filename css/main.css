@@ -206,7 +206,7 @@ div.header div.bottom-right-text p {
 div.deals {
     width: 100%;
     background-color: #F6F6F2;
-    padding: 150px 0 150px 0;
+    padding: 120px 0 150px 0;
 }
 
 div.deals div.deal-heading {
@@ -221,7 +221,9 @@ div.deals div.deal-heading div.heading-title {
 }
 
 div.deals div.deal-heading div.heading-title p {
-    margin: 0;
+    margin:0;
+    padding-left: 60px;
+    padding-bottom: 25px;
     font-size: 36px;
 }
 
@@ -239,6 +241,7 @@ div.deals div.deal-heading div.heading-details p {
 
 div.deals div.deal-heading div.heading-details p a {
     color: #000;
+    padding-right: 60px;
 }
 
 div.deals div.deal-product-list {
@@ -1465,6 +1468,4 @@ div.modal-content div.form-button-row button#yes {
 
 div.modal-content div.form-button-row button#no {
     background-color: #C4C4C4;
-
-
-
+}
